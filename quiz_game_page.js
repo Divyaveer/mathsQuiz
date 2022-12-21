@@ -56,7 +56,10 @@ function check() {
             player1_score += 1;
             document.getElementById("player1_score").innerHTML = player1_score;
         }
-        alert("Wrong Answer");
+        
+        if(answer_turn == "player1"){
+            alert("Wrong Answe! " + player1_name + ", you lost 1 point...");
+        }
 
     }
 
