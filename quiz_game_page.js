@@ -58,7 +58,9 @@ function check() {
         }
         
         if(answer_turn == "player1"){
-            alert("Wrong Answe! " + player1_name + ", you lost 1 point...");
+            alert("Wrong Answer! " + player1_name + ", you lost 1 point...");
+        }else{
+            alert("Wrong Answer! " + player2_name + ", you lost 1 point....");
         }
 
     }
