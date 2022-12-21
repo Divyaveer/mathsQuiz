@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #ce4;
+    margin-bottom: 2px;
+    max-height: 100vh;
+}
+
+.scoreBoard{
+    position: fixed;
+    z-index: 10;
+    margin: 10px;
+    left: 20px;
+}
+
+#player1_name{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+#player2_name{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+center{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+center h1{
+    background: #fff;
+    border-radius: 10px;
+    transition: .5s;
+    width: 150px;
+    height: 50px;
+    margin: 10px auto;
+    box-shadow: 45px 34px 65px rgba(0,0,0,.7);
+}
+
+center h1:hover{
+    color: #ff0;
+    background: #0ff;
+    transform: scale(1.2);
+}
+
+.login_div1{
+    background: #fff;
+    border-radius: 10px;
+    height: 114px;
+    width: 940px;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    transition: .5s;
+    box-shadow: 45px 34px 65px rgba(0,0,0,.7);
+}
+
+.login_div1:hover{
+    color: #fff;
+    background: #0ff;
+}
+
+.login_div1 h2{
+    transition: .5s;
+}
+
+.login_div1:hover h2{
+    color: #fff;
+    transform: scale(1.001);
+}
+
+.login_div1 label{
+    transition: .5s;
+}
+
+.login_div1:hover label{
+    color: rgb(46, 6, 46);
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.login_div1 input{
+    width: 70%;
+    border-radius: 21px;
+    height: 30px;
+    padding: 10px;
+    text-align: center;
+    outline: none;
+    font-family: 'Cairo', sans-serif;
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+
+.login_div1 input::selection{
+    background-color: black;
+    color: #0f0;
+}
+
+.login_div1 input:focus{
+    color: #f00;
+    font-weight: bolder;
+}
+
+.btn{
+    background: #fff;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    height: 40px;
+    border-radius: 30px;
+    letter-spacing: 4px;
+    transition: .5s;
+    cursor: pointer;
+    margin-bottom: 20px;
+    box-shadow: 45px 34px 65px rgba(0,0,0,.7);
+}
+
+.btn:hover{
+    background: #0ff;
+    padding-left: 20px;
+    color: #ff0;
+    transform: scale(1.05);
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+}
+
+.container center{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.header{
+    transition: .5s;
+    width: 360px;
+    margin-bottom: 20px;
+}
+
+.header h2{
+    color: #fff;
+    transition: .5s;
+}
+
+.header:hover{
+    opacity: .5;
+    background: #d74141;
+    transform: skew(-10deg);
+    box-shadow: 5px 18px 0px #0008;
+}
+
+.header:hover h2{
+    color: #000080;
+}
+
+#output{
+    background: #fff;
+    border-radius: 10px;
+    border-top: 10px solid #AA4465;
+    padding: 10px;
+    float: none;
+    text-align: left;
+    width: 50%;
+    transition: .5s;
+    box-shadow: 46px 26px 23px rgba(0,0,0,.7);
+}
+
+#output:hover{
+    background: #0ff;
+    color: #330d0d;
+    /* font-size: 1.5rem; */
+    font-weight: bold;
+    padding: 20px;
+    box-shadow: 0 0 100px #fff,
+    inset 0 0 50px #fff,
+    inset 0 0 50px #000 
+}
+#output:hover h4{
+    font-size: 1.75rem;
+    color: navy;
+}
+
+#number1_input{
+    width: 80%;
+    border: 1px solid;
+    border-radius: 21px;
+    text-align: center;
+    outline: none;
+}
+
+#number2_input{
+    width: 80%;
+    border: 1px solid;
+    border-radius: 21px;
+    text-align: center;
+    outline: none;
+}
+
+.scoreBoard{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.check_btn{
+    width: 153px;
+    height: 26px;
+    font-size: .9rem;
+}
+
+.check_btn:hover{
+    padding-right: 20px;
+    background: #0f0;
+    color: #f00;
+}
